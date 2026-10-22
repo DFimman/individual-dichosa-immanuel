@@ -27,8 +27,11 @@ public class Activity5_Dichosa {
                 "   [5] ALLNET \n" +
                 "Enter Number: ");
 
-        // main menu select input
-        String select = scanner.next();
+        // declaration
+        String promoName = "";
+        String promoDescription = "";
+        String select = scanner.next(); // main menu select input
+
 
         // conditional statement for main menu (switch)
         switch (select){
@@ -48,82 +51,43 @@ public class Activity5_Dichosa {
                 // conditional statements for submenu
                 switch (select){
                     case "1":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** Go+99 Promo ***\n" +
-                                        "-> Get 8GB for all sites + 8GB freebie\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        // promoSelect = scanner.next();
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Go+99 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "Go+99";
+                        promoDescription = "-> Get 8GB for all sites + 8GB freebie";
                         break;
-
                     case "2":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** Go+129 Promo ***\n" +
-                                        "-> Get 12GB for all sites + 8GB freebie for 1 week\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Go+129 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "Go+129";
+                        promoDescription = "-> Get 12GB for all sites + 8GB freebie for 1 week";
                         break;
-
                     case "3":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** Go+149 Promo ***\n" +
-                                        "-> Get 12GB for all sites + 12GB freebie for 10 days\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Go+149 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "Go+149";
+                        promoDescription = "-> Get 12GB for all sites + 12GB freebie for 10 days";
                         break;
                     default:
                         System.out.println("Invalid Number, Please only enter [1-3] without spaces!");
+                        break;
+                }
+
+                // display promo details
+                System.out.print(
+                        "\n        *** " + promoName + " Promo ***\n" +
+                                promoDescription + "\n" +
+                                "   [1] Subscribe\n" +
+                                "   [2] Exit \n" +
+                                "Enter Number: ");
+                // input
+                select = scanner.next();
+
+                switch (select){
+                    case "1":
+                        System.out.println("\nYou are now subscribe to " + promoName + " Promo! yey!");
+                        return;
+                    case "2":
+                        return;
+                    default:
+                        System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
+                        break;
                 }
                 break;
-
             case "2":
                 // Display Promo Menu for Go
                 System.out.print(
@@ -140,81 +104,43 @@ public class Activity5_Dichosa {
                 // conditional statements for submenu
                 switch (select){
                     case "1":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** Go50 Promo ***\n" +
-                                        "-> Get 5GB 5G + 3G for all networks (3days)\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Go50 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "Go50";
+                        promoDescription = "--> Get 5GB 5G + 3G for all networks (3days)";
                         break;
-
                     case "2":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** Go90 Promo ***\n" +
-                                        "-> Get 9GB for all network + 3GBB for 1 week\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Go90 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "Go90";
+                        promoDescription = "-> Get 9GB for all network + 3GB for 1 week";
                         break;
                     case "3":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** Go120 Promo ***\n" +
-                                        "-> Get 15GB for all sites for 1 week\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Go120 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
-
+                        promoName = "Go120";
+                        promoDescription = "-> Get 15GB for all sites for 1 week";
                         break;
                     default:
                         System.out.println("Invalid Number, Please only enter [1-3] without spaces!");
+                        break;
+                }
+
+                // display promo details
+                System.out.print(
+                        "\n        *** " + promoName + " Promo ***\n" +
+                                promoDescription + "\n" +
+                                "   [1] Subscribe\n" +
+                                "   [2] Exit \n" +
+                                "Enter Number: ");
+                // input
+                select = scanner.next();
+
+                switch (select){
+                    case "1":
+                        System.out.println("\nYou are now subscribe to " + promoName + " Promo! yey!");
+                        return;
+                    case "2":
+                        return;
+                    default:
+                        System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
+                        break;
                 }
                 break;
-
             case "3":
                 // Display Promo Menu for GoImman Promos
                 System.out.print(
@@ -231,81 +157,43 @@ public class Activity5_Dichosa {
                 // conditional statements for submenu
                 switch (select){
                     case "1":
-                        // display promo details
-                        System.out.print(
-                                "\n               *** Goimman67 Promo ***\n" +
-                                        "-> Get 6GB for all site + 7GB 5G for 1 week + imman signature)\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Goimman67 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "GoImman67";
+                        promoDescription = "-> Get 6GB for all site + 7GB 5G for 1 week + imman signature";
                         break;
-
                     case "2":
-                        // display promo details
-                        System.out.print(
-                                "\n               *** Goimman120 Promo ***\n" +
-                                        "-> Get 12 GB for all sites + 3 GB 5G for 10 days + imman signature\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Goimman120 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "GoImman120";
+                        promoDescription = "-> Get 12 GB for all sites + 3 GB 5G for 10 days + imman signature";
                         break;
                     case "3":
-                        // display promo details
-                        System.out.print(
-                                "\n               *** Go426 Promo ***\n" +
-                                        "-> Get 1gb for all sites + 1gb 5g everyday for 30 days + imman personal card\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to Go426 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
-
+                        promoName = "GoImman426";
+                        promoDescription = "-> Get 1gb for all sites + 1gb 5g everyday for 30 days + imman personal card-> Get 15GB for all sites for 1 week";
                         break;
                     default:
                         System.out.println("Invalid Number, Please only enter [1-3] without spaces!");
+                        break;
+                }
+
+                // display promo details
+                System.out.print(
+                        "\n                     *** " + promoName + " Promo ***\n" +
+                                promoDescription + "\n" +
+                                "          [1] Subscribe\n" +
+                                "          [2] Exit \n" +
+                                "Enter Number: ");
+                // input
+                select = scanner.next();
+
+                switch (select){
+                    case "1":
+                        System.out.println("\nYou are now subscribe to " + promoName + " Promo! yey!");
+                        return;
+                    case "2":
+                        return;
+                    default:
+                        System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
+                        break;
                 }
                 break;
-
             case "4":
                 // Display Promo Menu for Unli 5G Promos
                 System.out.print(
@@ -322,81 +210,43 @@ public class Activity5_Dichosa {
                 // conditional statements for submenu
                 switch (select){
                     case "1":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** UNLI 5G 99 Promo ***\n" +
-                                        "-> Get UNLI 5G for 3 days\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to UNLI 5G 99 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "UNLI 5G 99";
+                        promoDescription = "-> Get UNLI 5G for 3 days";
                         break;
-
                     case "2":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** UNLI 5G 149 Promo ***\n" +
-                                        "-> Get UNLI 5G for 7 days\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to UNLI 5G 149 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "UNLI 5G 149";
+                        promoDescription = "-> Get UNLI 5G for 7 days";
                         break;
                     case "3":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** UNLI 5G 199 ***\n" +
-                                        "-> Get UNLI 5G for 14 days\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to UNLI 5G 199 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
-
+                        promoName = "UNLI 5G 199";
+                        promoDescription = "-> Get UNLI 5G for 14 days";
                         break;
                     default:
                         System.out.println("Invalid Number, Please only enter [1-3] without spaces!");
+                        break;
+                }
+
+                // display promo details
+                System.out.print(
+                        "\n        *** " + promoName + " Promo ***\n" +
+                                promoDescription + "\n" +
+                                "   [1] Subscribe\n" +
+                                "   [2] Exit \n" +
+                                "Enter Number: ");
+                // input
+                select = scanner.next();
+
+                switch (select){
+                    case "1":
+                        System.out.println("\nYou are now subscribe to " + promoName + " Promo! yey!");
+                        return;
+                    case "2":
+                        return;
+                    default:
+                        System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
+                        break;
                 }
                 break;
-
             case "5":
                 // Display Promo Menu for ALLNET
                 System.out.print(
@@ -413,86 +263,46 @@ public class Activity5_Dichosa {
                 // conditional statements for submenu
                 switch (select){
                     case "1":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** ALLNET99 Promo ***\n" +
-                                        "-> Get 10 GB ALL NET  for 3 days\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to ALLNET99 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "UNLI 5G 99";
+                        promoDescription = "-> Get 10 GB ALL NET  for 3 days";
                         break;
-
                     case "2":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** ALLNET149 Promo ***\n" +
-                                        "-> Get 10 GB ALL NET  for 7 days\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to ALLNET149 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
+                        promoName = "UNLI 5G 149";
+                        promoDescription = "-> Get 10 GB ALL NET  for 7 days";
                         break;
                     case "3":
-                        // display promo details
-                        System.out.print(
-                                "\n        *** ALLNET199 Promo ***\n" +
-                                        "-> Get 12 GB ALL NET  for 7 days\n" +
-                                        "   [1] Subscribe\n" +
-                                        "   [2] Exit \n" +
-                                        "Enter Number: ");
-                        // input
-                        select = scanner.next();
-
-                        // conditional statements for subscription
-                        switch (select){
-                            case "1":
-                                System.out.println("\nYou are now subscribe to ALLNET199 Promo! yey!");
-                                return;
-                            case "2":
-                                return;
-                            default:
-                                System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
-                                break;
-                        }
-
+                        promoName = "UNLI 5G 199";
+                        promoDescription = "-> Get 12 GB ALL NET  for 7 days";
                         break;
                     default:
                         System.out.println("Invalid Number, Please only enter [1-3] without spaces!");
+                        break;
+                }
+
+                // display promo details
+                System.out.print(
+                        "\n        *** " + promoName + " Promo ***\n" +
+                                promoDescription + "\n" +
+                                "   [1] Subscribe\n" +
+                                "   [2] Exit \n" +
+                                "Enter Number: ");
+                // input
+                select = scanner.next();
+
+                switch (select){
+                    case "1":
+                        System.out.println("\nYou are now subscribe to " + promoName + " Promo! yey!");
+                        return;
+                    case "2":
+                        return;
+                    default:
+                        System.out.println("Invalid Number, Please only enter [1-2] without spaces!");
+                        break;
                 }
                 break;
-
             default:
                 System.out.println("Invalid Number, Please only enter [1-5] and without spaces!");
                 break;
         }
-
-
     }
 }
