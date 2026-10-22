@@ -1,11 +1,13 @@
-package com.joysistvi.day6.ifstatement;
+package com.joysistvi.day8.nestedif;
+
 import java.util.Scanner;
 
-public class Activity4_Dichosa {
+public class NestedIfStatements {
     public static void main(String[] args) {
         // declaration and initiation
         int age;
         String category = "";
+        String subCategory = "";
 
         //  Scanner object for keyboard input
         Scanner scanner = new Scanner(System.in);
@@ -31,6 +33,11 @@ public class Activity4_Dichosa {
         else {
             if (age >= 0 && age <= 2){
                 category = "Baby";
+                if (age >= 0 && age <= 1){
+                    subCategory = "Infant";
+                } else {
+                    subCategory = "Toddler";
+                }
             } else if (age >= 3 && age <= 12) {
                 category = "Child";
             } else if (age >= 13 && age <= 19) {
@@ -41,9 +48,15 @@ public class Activity4_Dichosa {
                 category = "Adult";
             } else if (age >= 60 && age <= 100) {
                 category = "Senior";
+                if (age >= 60 && age <= 75){
+                    subCategory = "Younger";
+                } else {
+                    subCategory = "Older";
+                }
             }
         }
 
         System.out.println("Age Category: " + category);
+        System.out.println("Sub-category: " + subCategory);
     }
 }

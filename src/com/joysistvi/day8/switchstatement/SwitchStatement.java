@@ -1,4 +1,4 @@
-package com.joysistvi.day7.switchstatement;
+package com.joysistvi.day8.switchstatement;
 
 public class SwitchStatement {
     public static void main(String[] args) {

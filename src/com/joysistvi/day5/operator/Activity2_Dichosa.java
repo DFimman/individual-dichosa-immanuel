@@ -1,4 +1,4 @@
-package com.joysistvi.day4.operator;
+package com.joysistvi.day5.operator;
 
 public class Activity2_Dichosa {
     public static void main(String[] args) {

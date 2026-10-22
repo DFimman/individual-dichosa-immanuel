@@ -1,4 +1,4 @@
-package com.joysistvi.day3.variable;
+package com.joysistvi.day4.variable;
 
 public class Activity1_Dichosa {
 

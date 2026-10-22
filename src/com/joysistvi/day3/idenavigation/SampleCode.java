@@ -1,4 +1,4 @@
-package com.joysistvi.day2.idenavigation;
+package com.joysistvi.day3.idenavigation;
 
 public class SampleCode { //class
     public static void main(String[] args){ // main method

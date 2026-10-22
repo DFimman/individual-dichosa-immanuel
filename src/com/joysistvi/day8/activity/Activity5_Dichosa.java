@@ -1,4 +1,4 @@
-package com.joysistvi.day7.activity;
+package com.joysistvi.day8.activity;
 import java.util.Scanner;
 
 public class Activity5_Dichosa {

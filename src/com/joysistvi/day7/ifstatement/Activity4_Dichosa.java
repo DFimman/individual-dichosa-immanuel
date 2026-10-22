@@ -1,14 +1,11 @@
-package com.joysistvi.day7.nestedif;
-
-import java.sql.SQLOutput;
+package com.joysistvi.day7.ifstatement;
 import java.util.Scanner;
 
-public class NestedIfStatements {
+public class Activity4_Dichosa {
     public static void main(String[] args) {
         // declaration and initiation
         int age;
         String category = "";
-        String subCategory = "";
 
         //  Scanner object for keyboard input
         Scanner scanner = new Scanner(System.in);
@@ -34,11 +31,6 @@ public class NestedIfStatements {
         else {
             if (age >= 0 && age <= 2){
                 category = "Baby";
-                if (age >= 0 && age <= 1){
-                    subCategory = "Infant";
-                } else {
-                    subCategory = "Toddler";
-                }
             } else if (age >= 3 && age <= 12) {
                 category = "Child";
             } else if (age >= 13 && age <= 19) {
@@ -49,15 +41,9 @@ public class NestedIfStatements {
                 category = "Adult";
             } else if (age >= 60 && age <= 100) {
                 category = "Senior";
-                if (age >= 60 && age <= 75){
-                    subCategory = "Younger";
-                } else {
-                    subCategory = "Older";
-                }
             }
         }
 
         System.out.println("Age Category: " + category);
-        System.out.println("Sub-category: " + subCategory);
     }
 }
