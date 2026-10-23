@@ -16,7 +16,7 @@ public class Activity6_Dichosa {
                 System.out.print("Enter the multiplication table you want to display [1-10]: ");
                 number = scanner.nextInt();
 
-                if (!(number <= 10 && number >= 0)) {
+                if (!(number <= 10 && number >= 1)) {
                     System.out.println("Invalid Input! Enter only 1-10\n");
                 } else {
                     break;
