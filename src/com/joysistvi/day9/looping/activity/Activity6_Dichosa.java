@@ -6,9 +6,12 @@ public class Activity6_Dichosa {
         // create scanner
         Scanner scanner = new Scanner(System.in);
 
+        // main loop
         while (true) {
             // get number
             int number;
+
+            // loop for input validation
             while (true) {
                 System.out.print("Enter the multiplication table you want to display [1-10]: ");
                 number = scanner.nextInt();
