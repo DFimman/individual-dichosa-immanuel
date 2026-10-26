@@ -1,0 +1,22 @@
+[ARRAYS]
+
+- object which contains elements of a similar data type
+- stored in a contiguous memory location
+- data structure where we store similar elements
+- fixed set of elements
+
+--- SINGLE DIMENSIONAL ARRAY ---
+- linear
+- can be declared with elements
+    ** String[] cars = {"Sedan", "SUV", "Pickup"}; **
+- with size only
+    ** int[] evenNumbers = new int[5];
+- can assign new numbers for each index;
+    ** evenNumbers[0] = 2; ...evenNumbers[4] =10; **
+
+*** ADVANTAGE ***
+- Code Optimization
+- Storage Location / Manipulation
+
+*** DISADVANTAGE ***
+- Size Limit -> to solve, collection framework is being used
