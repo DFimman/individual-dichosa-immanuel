@@ -1,0 +1,11 @@
+---MULTI DIMENSIONAL---
+-arrays of arrays, each element consist of elements
+-used for charts, spreadsheets
+-can be compared to a table
+-for tabular format(
+
+TWO DIMENSIONAL ARRAY (2D)
+Declaration
+-> DataType[][] arrayName;
+-> DataType arrayName[][];
+-> arrayName = new DataType[][];
