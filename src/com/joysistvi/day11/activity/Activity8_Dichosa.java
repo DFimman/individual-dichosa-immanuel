@@ -63,8 +63,8 @@ public class Activity8_Dichosa {
                     System.out.println("Exiting...");
                     return;
                 default:
-                    System.out.println("Invalid.. Enter only Y/N");
-                    break;
+                    System.out.println("Invalid.. Enter only Y/N. Will Exit now!");
+                    return;
             }
         }
     }
