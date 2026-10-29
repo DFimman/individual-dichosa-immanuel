@@ -24,7 +24,7 @@ public class Activity10_Dichosa {
 
         // toCharArray() -> Converts this string to a new character array
         //      returns an array of char
-
+        /*
         Scanner sc = new Scanner(System.in);
         String word = "Philippines";
         System.out.println("\n\t------ STRING METHODS DEMO ------\n");
@@ -85,7 +85,7 @@ public class Activity10_Dichosa {
         char[] myArray = myStr.toCharArray();
         System.out.println("The word " + myStr + " is a " + myStr.getClass().getSimpleName());
         System.out.println("The word " + myStr + " is now a " + myArray.getClass().getSimpleName());
-        
+
 
         /* Stretch goal
         String country = "Philippines";
@@ -96,12 +96,12 @@ public class Activity10_Dichosa {
 
         System.out.println("\n\t\t\t-----STRETCH GOAL-----");
 
-        String country = "Philippines";
+        String country = "PhilIppinEs";
         System.out.println("Country: " + country);
 
         // display first and last char
-        char firstChar = country.toCharArray()[0];
-        char lastChar = country.toCharArray()[country.length() - 1];
+        char firstChar = country.charAt(0);
+        char lastChar = country.charAt(country.length() - 1);
         System.out.println("\nThe first char is: " + firstChar);
         System.out.println("The last char is: " + lastChar);
 
@@ -121,13 +121,12 @@ public class Activity10_Dichosa {
         int vowelCounter = 0;
 
         for (int i = 0; i < country.length(); i++){
-            char currentChar = country.charAt(i);
+            char currentChar = ignoredCaseCountry.charAt(i);
 
             for (char vowel : vowels){
-                if (currentChar == vowel){
+                if (currentChar == vowel){ //i = i
                     containedVowels[vowelCounter] = currentChar;
                     vowelCounter++;
-
                 }
             }
         }
@@ -137,6 +136,7 @@ public class Activity10_Dichosa {
         for (int i = 0; i < vowelCounter; i++){
             System.out.print(containedVowels[i] + " ");
         }
+        System.out.println();
 
     }
 }
