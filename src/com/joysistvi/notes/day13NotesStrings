@@ -1,0 +1,14 @@
+---STRING CLASS---
+- non primitive data type
+- contains string methods
+- object that represents sequence of char values
+- array of characters works same a Java String
+
+[ 2 WAYS ]
+-> String Literal - using double quotes
+    String word = "pogi";
+-> Using "new" keyword
+    String word = new String("Java");
+
+
+is a class an object? or an object a class??
