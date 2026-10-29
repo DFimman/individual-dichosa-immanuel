@@ -85,7 +85,7 @@ public class Activity10_Dichosa {
         char[] myArray = myStr.toCharArray();
         System.out.println("The word " + myStr + " is a " + myStr.getClass().getSimpleName());
         System.out.println("The word " + myStr + " is now a " + myArray.getClass().getSimpleName());
-
+        
 
         /* Stretch goal
         String country = "Philippines";
@@ -93,6 +93,50 @@ public class Activity10_Dichosa {
         -> count and display how many times P/p appears
         -> count and display total number of vowels
          */
+
+        System.out.println("\n\t\t\t-----STRETCH GOAL-----");
+
+        String country = "Philippines";
+        System.out.println("Country: " + country);
+
+        // display first and last char
+        char firstChar = country.toCharArray()[0];
+        char lastChar = country.toCharArray()[country.length() - 1];
+        System.out.println("\nThe first char is: " + firstChar);
+        System.out.println("The last char is: " + lastChar);
+
+        // count and display P/p appears
+        String ignoredCaseCountry = country.toLowerCase();
+        int counter = 0;
+        for (char letters : ignoredCaseCountry.toCharArray()){
+            if (letters == 'p'){
+                counter++;
+            }
+        }
+        System.out.println("\nNumber of P/p is: " + counter);
+
+        //count and display total number of vowels
+        char[] vowels = {'a', 'e', 'i', 'o', 'u'};
+        char[] containedVowels = new char[country.length()];
+        int vowelCounter = 0;
+
+        for (int i = 0; i < country.length(); i++){
+            char currentChar = country.charAt(i);
+
+            for (char vowel : vowels){
+                if (currentChar == vowel){
+                    containedVowels[vowelCounter] = currentChar;
+                    vowelCounter++;
+
+                }
+            }
+        }
+
+        System.out.println("\nThe country " + country + " consist of " + vowelCounter + " vowels");
+        System.out.print("Vowels founds: " );
+        for (int i = 0; i < vowelCounter; i++){
+            System.out.print(containedVowels[i] + " ");
+        }
 
     }
 }
