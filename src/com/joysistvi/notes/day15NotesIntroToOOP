@@ -1,0 +1,22 @@
+---- OOP ----
+
+SOLID PRINCIPLE
+- Single Responsibility Principle
+- Open/Closed Principle
+- Liskov Substitution Principle
+- Interface Segregation Principle
+- Do not repeat yourself
+
+-> meaning in OOP, per class per responsibility MVC (View - Display, Model - Processor, Controller)
+
+*Class is a blueprint
+
+4 Pillars of OOP
+- Inheritance -> keyword "extends"
+- Polymorphism
+- Encapsulation
+- Abstraction
+
+Mini Activity:
+Create own object -> create class, and instantiate an object
+
