@@ -1,0 +1,14 @@
+JAVA METHOD
+- a collection of instructions that perform a specific task
+- Main method -> starting programs of execution
+- block of code or collection of statement grouped together
+- like machines that take input data, process it, and produce output
+
+Parameter
+- variable defined in a method declaration
+
+Arguments
+- values to be passed inside the parameter
+-> input data
+
+Use static when no objects is created
