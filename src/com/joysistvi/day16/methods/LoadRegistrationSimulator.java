@@ -7,12 +7,14 @@ public class LoadRegistrationSimulator {
 
     public static void main(String[] args) {
         boolean isValidUssd = false;
+
         while (!isValidUssd) {
             isValidUssd = getUssdCode();
             displayValidationResult(isValidUssd);
         }
 
         boolean shouldContinueSession = true;
+
         while (shouldContinueSession) {
             displayMainMenu();
             String select = scanner.next();

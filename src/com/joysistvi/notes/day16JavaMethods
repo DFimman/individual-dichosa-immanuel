@@ -12,3 +12,29 @@ Arguments
 -> input data
 
 Use static when no objects is created
+
+User-defined Method
+- method written by the user or programmer
+- methods are modified according to the requirement
+
+Pre-defined Method
+- method that is already built, that a user can already use
+
+INSTANCES
+1. STATIC METHOD
+- a method that belongs...
+- we can call it without creating an object
+- can access static data members and also change the value of it
+2. INSTANCE METHOD
+- a method that only belong to the object
+- can only be called by the object
+
+
+JAVA SCOPE
+1. CLASS SCOPE
+2. METHOD SCOPE or LOCAL SCOPE
+3. BLOCK SCOPE
+4. LOOP SCOPE
+
+helper methods
+-> to make the validation logic be abstract..
