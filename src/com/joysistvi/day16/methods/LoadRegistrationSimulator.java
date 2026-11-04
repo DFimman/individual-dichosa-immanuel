@@ -17,8 +17,7 @@ public class LoadRegistrationSimulator {
 
         while (shouldContinueSession) {
             displayMainMenu();
-            String select = getInput();
-            shouldContinueSession = displayPromoMenu(select);
+            shouldContinueSession = displayPromoMenu(getInput());
         }
     }
 
