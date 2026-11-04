@@ -27,7 +27,7 @@ public class LoadRegistrationSimulator {
         return scanner.next().equals("*143#");
     }
 
-    public static String getInput(){
+    public static String getInput() {
         return scanner.nextLine().trim();
     }
 
@@ -58,11 +58,16 @@ public class LoadRegistrationSimulator {
     // true = show main menu again; false = end session.
     public static boolean displayPromoMenu(String select) {
         switch (select) {
-            case "1": return displayGoPlusMenu();
-            case "2": return displayGoMenu();
-            case "3": return displayGoImmanMenu();
-            case "4": return displayUnli5gMenu();
-            case "5": return displayAllNetMenu();
+            case "1":
+                return displayGoPlusMenu();
+            case "2":
+                return displayGoMenu();
+            case "3":
+                return displayGoImmanMenu();
+            case "4":
+                return displayUnli5gMenu();
+            case "5":
+                return displayAllNetMenu();
             default:
                 invalidMessage();
                 return true;
@@ -83,10 +88,7 @@ public class LoadRegistrationSimulator {
             String select = getInput();
             switch (select) {
                 case "1":
-                    if (!displayPromoDetailsMenu(
-                            "Go+99",
-                            "-> Get 8GB for all sites + 8GB freebie"
-                    )) {
+                    if (!displayPromoDetailsMenu("Go+99", "-> Get 8GB for all sites + 8GB freebie")) {
                         return false; // Subscribe or Exit ends the session.
                     }
                     break; // Back: repeat this category\'s menu.

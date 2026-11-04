@@ -1,0 +1,22 @@
+Exception Handling in Java
+
+TRY-CATCH
+- try statement -> allows you to define a block of code to be tested for errors while it is being executed
+- catch statement -> allows you to define a block of code to be executed, if an error occurs in the try block
+- Try and catch keywords come in pair
+
+SYNTAX:
+try {
+    //block of code to try
+}
+catch(Exception e) {
+    //block of code to handle errors
+}
+
+COMMON EXCEPTIONS SCENARIOS
+1. ArrayIndexOutOfBoundsException
+2. StringIndexOutOfBoundsException
+3. NullPointerException
+4. NumberFormatException
+5. ArithmeticException
+6. InputMismatchException
