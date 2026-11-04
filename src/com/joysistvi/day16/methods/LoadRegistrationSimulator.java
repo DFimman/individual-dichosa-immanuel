@@ -17,7 +17,7 @@ public class LoadRegistrationSimulator {
 
         while (shouldContinueSession) {
             displayMainMenu();
-            String select = scanner.next();
+            String select = getInput();
             shouldContinueSession = displayPromoMenu(select);
         }
     }
@@ -26,6 +26,10 @@ public class LoadRegistrationSimulator {
         System.out.println("\n--- Welcome to DFImman USSD Load Registration ---");
         System.out.print("Enter USSD Code: ");
         return scanner.next().equals("*143#");
+    }
+
+    public static String getInput(){
+        return scanner.nextLine().trim();
     }
 
     public static void displayValidationResult(boolean isValid) {
@@ -77,7 +81,7 @@ public class LoadRegistrationSimulator {
                             "Enter Number: "
             );
 
-            String select = scanner.next();
+            String select = getInput();
             switch (select) {
                 case "1":
                     if (!displayPromoDetailsMenu(
@@ -122,7 +126,7 @@ public class LoadRegistrationSimulator {
                             "Enter Number: "
             );
 
-            String select = scanner.next();
+            String select = getInput();
             switch (select) {
                 case "1":
                     if (!displayPromoDetailsMenu(
@@ -167,7 +171,7 @@ public class LoadRegistrationSimulator {
                             "Enter Number: "
             );
 
-            String select = scanner.next();
+            String select = getInput();
             switch (select) {
                 case "1":
                     if (!displayPromoDetailsMenu(
@@ -212,7 +216,7 @@ public class LoadRegistrationSimulator {
                             "Enter Number: "
             );
 
-            String select = scanner.next();
+            String select = getInput();
             switch (select) {
                 case "1":
                     if (!displayPromoDetailsMenu(
@@ -257,7 +261,7 @@ public class LoadRegistrationSimulator {
                             "Enter Number: "
             );
 
-            String select = scanner.next();
+            String select = getInput();
             switch (select) {
                 case "1":
                     if (!displayPromoDetailsMenu(
@@ -304,7 +308,7 @@ public class LoadRegistrationSimulator {
                             "Enter Number: "
             );
 
-            String select = scanner.next();
+            String select = getInput();
             switch (select) {
                 case "1":
                     subscribed(promoName);
