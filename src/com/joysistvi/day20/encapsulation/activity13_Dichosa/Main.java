@@ -37,7 +37,7 @@ public class Main {
             System.out.println("\n!! Password must have: \n-a capitalized letter | \n-a number | \n-a special char | \n-atleast 8 char!!"); //reminder
             user.setPassword(UserAccount.askUserInput("Enter password: "));
             valid = UserAccount.isPasswordValid(user);
-        } while ((!valid));
+        } while (!valid);
 
         displayUser(user);
 
