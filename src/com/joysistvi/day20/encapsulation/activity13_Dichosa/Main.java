@@ -31,11 +31,13 @@ public class Main {
         do {
             user.setEmail(UserAccount.askUserInput("Enter email: "));
             valid = UserAccount.isEmailValid(user);
+        } while (!valid);
 
+        do {
+            System.out.println("\n!! Password must have: \n-a capitalized letter | \n-a number | \n-a special char | \n-atleast 8 char!!"); //reminder
             user.setPassword(UserAccount.askUserInput("Enter password: "));
             valid = UserAccount.isPasswordValid(user);
-
-        } while (!valid);
+        } while ((!valid));
 
         displayUser(user);
 

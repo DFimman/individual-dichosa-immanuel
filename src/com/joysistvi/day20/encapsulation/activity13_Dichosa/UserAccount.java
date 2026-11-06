@@ -63,24 +63,24 @@ public class UserAccount {
     }
 
     static public boolean isEmailValid(UserAccount user) {
-        String invalidationReasons = "Invalid email: \n";
+        String invalidationReasons = "\nInvalid email: \n";
         boolean isValid = true;
         int lastAtIndex = user.email.lastIndexOf('@');
         String domain = user.email.substring(lastAtIndex + 1).trim();
 
         // email must be at most 320 chars only (SMTP protocol RFC 5321) technical standard
         if (user.email.length() > 320){
-            invalidationReasons += "Up to 320 characters only!\n";
+            invalidationReasons += "- Up to 320 characters only!\n";
             isValid = false;
         }
         // email must have @
         if (!user.email.contains("@")) {
-            invalidationReasons += "Missing the '@' symbol.\n";
+            invalidationReasons += "- Missing the '@' symbol.\n";
             isValid = false;
         }
         // email must have proper domain
         if (domain.isEmpty() || !domain.contains(".")) {
-            invalidationReasons += "Missing a valid domain extension (e.g., .com, .org).\n";
+            invalidationReasons += "- Missing a valid domain extension (e.g., .com, .org).\n";
             isValid = false;
         }
 
@@ -93,44 +93,43 @@ public class UserAccount {
     }
 
     static public boolean isPasswordValid(UserAccount user) {
-        String invalidationReasons = "Invalid password: \n";
+        String invalidationReasons = "\nInvalid password: \n";
         boolean isValid = true;
         // password standards by String invalidationReasons = "Invalid email: \n";
 
         // Validate Length (Standard 8 to 64 characters)
         if (user.password.length() < 8 || user.password.length() > 64) {
-            invalidationReasons += "Invalid password: Must be between 8 and 64 characters long.\n";
+            invalidationReasons += "- Invalid password: Must be between 8 and 64 characters long.\n";
             isValid = false;
         }
 
         // Validate Lowercase Letter
         if (!user.password.matches(".*[a-z].*")) {
-            invalidationReasons += "Invalid password: Must contain at least one lowercase letter.\n";
+            invalidationReasons += "- Invalid password: Must contain at least one lowercase letter.\n";
             isValid = false;
         }
 
         // Validate Uppercase Letter
         if (!user.password.matches(".*[A-Z].*")) {
-            invalidationReasons += "Invalid password: Must contain at least one uppercase letter.\n";
+            invalidationReasons += "- Invalid password: Must contain at least one uppercase letter.\n";
             isValid = false;
         }
 
         // Validate Number
         if (!user.password.matches(".*[0-9].*")) {
-            invalidationReasons += "Invalid password: Must contain at least one digit (0-9).\n";
+            invalidationReasons += "- Invalid password: Must contain at least one digit (0-9).\n";
             isValid = false;
         }
 
         // Validate Special Character
         // This matches standard symbols like @, #, $, %, ^, &, +, =, !
         if (!user.password.matches(".*[@#$%^&+=!].*")) {
-            invalidationReasons += "Invalid password: Must contain at least one special character (@#$%^&+=!).\n";
+            invalidationReasons += "- Invalid password: Must contain at least one special character (@#$%^&+=!).\n";
             isValid = false;
         }
 
        if (isValid == false){
            System.out.println(invalidationReasons);
-           isValid = false;
        }
 
        return isValid;
