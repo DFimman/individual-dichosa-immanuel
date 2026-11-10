@@ -60,6 +60,6 @@ public class Pen {
     public String toString() {
         return  "brand: " + brand + "\n" +
                 "color: " + color + "\n" +
-                "weightInGrams: " + weightInGrams + "\n";
+                "weightInGrams: " + weightInGrams;
     }
 }

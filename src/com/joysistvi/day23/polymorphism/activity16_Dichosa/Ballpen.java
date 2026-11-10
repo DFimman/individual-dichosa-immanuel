@@ -35,6 +35,6 @@ public class Ballpen extends Pen {
     public String toString() {
         return  "Type: Ballpen \n" +
                 super.toString() +
-                "pointSize: " + pointSize;
+                "\npointSize: " + pointSize;
     }
 }

@@ -31,6 +31,6 @@ public class Highlighter extends Pen {
     public String toString() {
         return  "Type: Highlighter \n" +
                 super.toString() +
-                "Ink Type: " + inkType;
+                "\nInk Type: " + inkType;
     }
 }
